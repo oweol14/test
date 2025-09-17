@@ -1,0 +1,154 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding-top: 56px; /* Height of the navbar */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #3B5998 !important; /* Facebook Blue */
+    padding: 0.75rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.search-input {
+    width: 300px !important;
+    margin-right: 1rem;
+    border-radius: 20px; /* Rounded search input */
+    border: none; /* Remove border */
+}
+
+/* Main Content */
+.main-content {
+    padding-top: 20px;
+}
+
+/* Sidebar */
+.left-sidebar,
+.right-sidebar {
+    padding-top: 15px;
+}
+
+.sidebar-content {
+    padding: 15px;
+}
+
+/* Profile Circle */
+.profile-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white; /* Ensure text is white */
+}
+
+.profile-circle img { /* Style profile images */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.small-circle {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+}
+
+/* News Feed Header */
+.card-header {
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    display: flex; /* Ensure flexbox layout */
+    align-items: center; /* Vertically align items */
+}
+
+.card-header .profile-circle {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    margin-right: 10px; /* Add spacing */
+}
+
+.card-header .flex-grow-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Post Creation */
+.form-control::placeholder {
+    color: #999;
+}
+
+/* Event Poster */
+.event-poster {
+    background-color: #E9EBEE; /* Light grey background */
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Post Actions */
+.post-actions .btn {
+    color: #6c757d;
+}
+
+/* Upcoming Events */
+.date-box {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.date-month {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.date-day {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Card Styling */
+.card {
+    border: none; /* Remove card borders */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+/* Left Sidebar Active Link */
+.list-group-item.active {
+    background-color: #3B5998; /* Facebook Blue */
+    border-color: #3B5998;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .search-input {
+        width: auto !important;
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        display: none; /* Hide sidebars on smaller screens */
+    }
+
+    .center-content {
+        width: 100%; /* Make center content full width */
+    }
+}

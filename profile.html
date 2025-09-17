@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Campus - Profile</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/profile.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white fw-bold" href="#">Social Campus</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav me-auto">
+          <input class="form-control search-input" type="search" placeholder="Search posts, people, groups" style="width: 300px;">
+        </div>
+        <div class="navbar-nav">
+          <a class="nav-link text-white" href="index.html">Home</a>
+          <a class="nav-link text-white" href="profile.html">Profile</a>
+          <a class="nav-link text-white" href="message.html">Messages</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container-fluid main-content mt-5 pt-4">
+    <div class="row">
+
+      <!-- Left Sidebar -->
+      <div class="col-lg-3 col-md-4 left-sidebar">
+        <div class="sidebar-content">
+          <!-- Profile Card -->
+          <div class="card mb-3">
+            <div class="card-body text-center">
+              <div class="profile-circle-sm mb-2">
+                <img src="img/me.jpg" alt="Profile Picture" class="rounded-circle" width="80" height="80" style="object-fit: cover;">
+              </div>
+              <h6 class="card-title mb-1">Sharaine May C. Diotay</h6>
+              <small class="text-muted">BSIT - 3rd Year Student</small>
+            </div>
+          </div>
+          <!-- Navigation Menu -->
+          <div class="card">
+            <div class="list-group list-group-flush">
+              <a href="newsfeed.html" class="list-group-item list-group-item-action">News Feed</a>
+              <a href="profile.html" class="list-group-item list-group-item-action active">My Profile</a>
+              <a href="groups.html" class="list-group-item list-group-item-action">Groups</a>
+              <a href="events.html" class="list-group-item list-group-item-action">Events</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center Content -->
+      <div class="col-lg-6 col-md-8 center-content">
+
+        <!-- Profile Section -->
+        <div class="profile-container">
+          <!-- Cover Photo -->
+          <div class="profile-cover">
+            <div class="profile-circle">
+              <img src="img/me.jpg" alt="Profile Picture">
+            </div>
+          </div>
+
+          <!-- Profile Info -->
+          <div class="profile-info">
+            <h5>Sharaine May C. Diotay</h5>
+            <small>BSIT - 3rd Year Student</small>
+          </div>
+
+          <!-- Navigation Tabs -->
+          <div class="profile-nav">
+            <ul>
+              <li><a href="#" class="active">Posts</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Friends</a></li>
+              <li><a href="#">Photos</a></li>
+            </ul>
+          </div>
+
+          <!-- Profile Details -->
+          <div class="profile-details p-3">
+            <p><strong>University:</strong> State University of Northern Negros</p>
+            <p><strong>Location:</strong> Municipality of Toboso, Negros Occidental, Philippines</p>
+            <p>I'm a passionate BSIT student interested in web development and UI/UX design. I enjoy learning new technologies and contributing to open-source projects.</p>
+          </div>
+        </div>
+
+        <!-- Skills Card -->
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Skills</h5>
+            <ul class="list-unstyled">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Bootstrap</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Projects Card -->
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Projects</h5>
+            <ul>
+              <li>Social Campus Project</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education Card -->
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Education</h5>
+            <p>
+              <strong>State University of Northern Negros</strong><br>
+              BSIT - Bachelor of Science in Information Technology<br>
+              [2023]
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Sidebar -->
+      <div class="col-lg-3 d-none d-lg-block right-sidebar">
+        <div class="sidebar-content">
+          <!-- Upcoming Events -->
+          <div class="card mb-3">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h6 class="mb-0">Upcoming</h6>
+              <small><a href="#" class="text-decoration-none">See all</a></small>
+            </div>
+            <div class="card-body">
+              <div class="d-flex align-items-start">
+                <div class="date-box me-3">
+                  <div class="date-month">Sep</div>
+                  <div class="date-day">30</div>
+                </div>
+                <div>
+                  <h6 class="mb-0">Study Jam</h6>
+                  <small class="text-muted">Sep 30, 2025<br>CICTE Lab • 2:00 PM</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

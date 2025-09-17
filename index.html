@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Campus</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white fw-bold" href="#">Social Campus</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav me-auto">
+                    <input class="form-control search-input" type="search" placeholder="Search posts, people, groups" style="width: 300px;">
+                </div>
+                <div class="navbar-nav">
+                    <a class="nav-link text-white" href="index.html">Home</a>
+                    <a class="nav-link text-white" href="profile.html">Profile</a>
+                    <a class="nav-link text-white" href="message.html">Messages</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid main-content">
+        <div class="row">
+            <!-- Left Sidebar -->
+            <div class="col-lg-3 col-md-4 left-sidebar">
+                <div class="sidebar-content">
+                    <!-- Profile Section -->
+                    <div class="card mb-3">
+                        <div class="card-body text-center">
+                            <div class="profile-circle mb-2">
+                                <img src="img/me.jpg" alt="Profile Picture" class="rounded-circle" width="50" height="50" style="object-fit: cover;">
+                            </div>
+                            <h6 class="card-title mb-1">Sharaine May C. Diotay</h6>
+                            <small class="text-muted">BSIT - 3rd Year Student</small>
+                        </div>
+                    </div>
+                    <!-- Navigation Menu -->
+                    <div class="card">
+                        <div class="list-group list-group-flush">
+                            <a href="newsfeed.html" class="list-group-item list-group-item-action active">News Feed</a>
+                            <a href="profile.html" class="list-group-item list-group-item-action">My Profile</a>
+                            <a href="groups.html" class="list-group-item list-group-item-action">Groups</a>
+                            <a href="events.html" class="list-group-item list-group-item-action">Events</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Content (News Feed) -->
+            <div class="col-lg-6 col-md-8 center-content">
+                <!-- News Feed Header -->
+                <div class="card mb-3">
+                    <div class="card-header d-flex align-items-center">
+                        <div class="profile-circle bg-secondary text-white me-3">ST</div>
+                        <div class="flex-grow-1">
+                            <h5 class="card-title mb-0">News Feed - Web System Activity</h5>
+                            <small class="text-muted">Preview for class activity</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post Creation -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex align-items-start">
+                            <div class="profile-circle bg-secondary text-white me-3">ST</div>
+                            <div class="flex-grow-1">
+                                <textarea class="form-control border-0" placeholder="What's happening on campus? (Students should create a post)" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">Add to your post: photo, event, or link</small>
+                            <button class="btn btn-primary btn-sm px-4">Post</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sample Posts -->
+                <!-- James Antonio's Study Jam Post -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="profile-circle me-2">
+                                <img src="img/james.jpg" alt="James Antonio" class="rounded-circle" width="30" height="30" style="object-fit: cover;">
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="mb-0 me-2">James Antonio Rosellosa</h6>
+                                    <small class="text-muted">4 hrs</small>
+                                </div>
+                                <small class="text-muted">BSIT 3A • Public</small>
+                            </div>
+                        </div>
+
+                        <!-- Event Poster Placeholder -->
+                        <div class="event-poster mb-3">
+                         <img src="img/study.jpg" alt="Study Jam Event Poster" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 0;">
+                        </div>
+                        <p class="card-text">Join our Study Jam this Friday at the CICTE Lab. Reviewing web dev basics and Bootstrap - snacks provided! 🎉</p>
+                        <div class="post-actions">
+                            <button class="btn btn-link btn-sm text-muted">Like</button>
+                            <button class="btn btn-link btn-sm text-muted">Comment</button>
+                            <button class="btn btn-link btn-sm text-muted">Share</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Felipe's Portfolio Post -->
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="profile-circle me-2">
+                                <img src="img/felipe.jpg" alt="Felipe" class="rounded-circle" width="30" height="30" style="object-fit: cover;">
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="mb-0 me-2">Felipe De Los Reyes</h6>
+                                    <small class="text-muted">Yesterday</small>
+                                </div>
+                                <small class="text-muted">BUS • Friends</small>
+                            </div>
+                        </div>
+                        <p class="card-text">Here's my portfolio site draft - feedback welcome. <br> https://felipedelosreyes.github.io/bus-portfolio/</p>
+                        <div class="post-actions">
+                            <button class="btn btn-link btn-sm text-muted">Like</button>
+                            <button class="btn btn-link btn-sm text-muted">Comment</button>
+                            <button class="btn btn-link btn-sm text-muted">Share</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="profile-circle me-2">
+                                <img src="img/me.jpg" alt="James Antonio" class="rounded-circle" width="30" height="30" style="object-fit: cover;">
+                            </div>
+                            <div class="flex-grow-1">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="mb-0 me-2">Sharaine May C. Diotay</h6>
+                                    <small class="text-muted">3 hrs</small>
+                                </div>
+                                <small class="text-muted">BSIT 3A • Public</small>
+                            </div>
+                        </div>
+
+                        <!-- Event Poster Placeholder -->
+                        <div class="event-poster mb-3">
+                         <img src="img/cover.jpg" alt="Study Jam Event Poster" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 0;">
+                        </div>
+                        <p class="card-text"></p>
+                        <div class="post-actions">
+                            <button class="btn btn-link btn-sm text-muted">Like</button>
+                            <button class="btn btn-link btn-sm text-muted">Comment</button>
+                            <button class="btn btn-link btn-sm text-muted">Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+
+            <!-- Right Sidebar -->
+            <div class="col-lg-3 d-none d-lg-block right-sidebar">
+                <div class="sidebar-content">
+                    <!-- Upcoming Events -->
+                    <div class="card mb-3">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <h6 class="mb-0">Upcoming</h6>
+                            <small><a href="#" class="text-decoration-none">See all</a></small>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-start">
+                                <div class="date-box me-3">
+                                    <div class="date-month">Sep</div>
+                                    <div class="date-day">30</div>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Study Jam</h6>
+                                    <small class="text-muted">Sep 30, 2025<br>CICTE Lab • 2:00 PM</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contacts -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h6 class="mb-0">Contacts</h6>
+                        </div>
+                        <div class="card-body">
+                            <!-- Contact 1 -->
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="profile-circle bg-info text-white me-3 small-circle">
+                                     <img src="img/james.jpg" alt="Contact" class="rounded-circle" width="30" height="30" style="object-fit: cover;">
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">James Antonio Rosellosa</h6>
+                                    <small class="text-success">Online</small>
+                                </div>
+                            </div>
+
+                            <!-- Contact 2 -->
+                            <div class="d-flex align-items-center">
+                                <div class="profile-circle bg-warning text-white me-3 small-circle">
+                                      <img src="img/felipe.jpg" alt="Contact" class="rounded-circle" width="30" height="30" style="object-fit: cover;">
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Felipe De Los Reyes</h6>
+                                    <small class="text-muted">2h</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
